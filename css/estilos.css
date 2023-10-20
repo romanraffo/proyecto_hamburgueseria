@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Maiden+Orange&family=Peralta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Lobster&family=Maiden+Orange&family=Peralta&family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Lobster&family=Maiden+Orange&family=Peralta&family=Pixelify+Sans&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wellfleet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker&family=Luckiest+Guy&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+  background-color: #ffd65a;
+  font-family: 'Bebas Neue', sans-serif;
+  color: black;
+}
+
+/*header*/
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-color: #FFAE03;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo_titulo{
+  font-family: 'Staatliches', cursive;
+  color: black;
+}
+
+.titulo{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.titulo-link{
+  color: black;
+  font-family: 'Blinker', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*seccion registrarme*/
+
+.menu__registrarme{
+  height: 100vh;
+  background-image: url(../img/fondo.naranja.registrarme.webp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta__registrarme{
+  width: 500px;
+  height: 600px;
+  margin: 0% auto;
+  background-color: white;
+  border-radius: 20px; /* Define el radio de las esquinas para hacerlas redondeadas */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+
+.div__logo__registrarme{
+  margin: 10px;
+}
+
+.div__logo__texto__registrarme{
+  font-size: 2rem;
+  border-bottom: thick double #030303;
+}
+
+.tarjeta__registrarme3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0.50rem;
+  margin-right: 0.50rem;
+}
+
+.form__div1{
+  margin-bottom: 30px;
+}
+
+.button__iniciar__registrarme{
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: rgb(233, 175, 68);
+}
+
+.div__divider__all{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.div__divider__left , .div__divider__right{
+  width: 100%;
+  border-bottom: 2px solid #000000;
+  margin: 10px;
+}
+
+.div__divider__center{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.div__redes__enlaces__registrarme{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.50rem;
+}
+
+.a__redes__enlaces__registrarme{
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: rgb(233, 175, 68);
+}
+
+/*seccion quienes somos o nosotros*/
+
+.contenedornosotros{
+  background-color: #ffd65a;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "nosotros1 nosotros1 nosotros2 nosotros2"
+    "nosotros3 nosotros3 nosotros4 nosotros4"
+    ;
+}
+
+.grid-item-nosotros1{
+  background-color:  #ffd65a;
+  grid-area: nosotros1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-item-nosotros2{
+  background-image: url(../img/fondo.hamburgueseria.jpg);
+  grid-area: nosotros2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 4rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+}
+
+.grid-item-nosotros3{
+  background-image: url(../img/fondo.paisaje.jpg);
+  grid-area: nosotros3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 4rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  font-weight: 1rem;
+}
+
+.bi-recycle{
+  font-size: 20px;
+  padding: 3px;
+}
+
+.grid-item-nosotros4{
+  background-color:  #ffd65a;
+  grid-area: nosotros4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*seccion locales*/
+
+.container__locales{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
+.div1__titulo__locales{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  font-size: 1.5rem;
+}
+
+.texto__locales{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.50rem;
+}
+
+.div2__titulo__locales  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo__locales{ 
+  border: 2px solid black;
+  border-radius: 50% 20% / 10% 40%;
+  background-color:  #FFAE03;
+  padding: 1.5rem;
+}
+
+.div3__titulo__locales{
+  display: flex;
+  justify-content: center;
+}
+
+.div4__titulo__locales{
+  border:2px solid black;
+  padding: 10px;
+  margin: 10px;
+  max-width: 250px;
+}
+
+.texto1__locales{
+  border-bottom: 2px solid black;
+}
+
+/*seccion inicio*/
+
+.maininicio{
+  height: 100vh;
+  background-image: url(../img/fondohamburguesas.logo.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maininicio1{
+  font-family: 'Bebas Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainpromo{
+  font-size: 1.5rem;
+  border: 2px dashed black;
+  padding: 5px;
+}
+
+.maintexto{
+   font-size: 3rem;
+}
+
+.mainbutton{
+  border: 2px solid black;
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 10px;
+}
+
+.mainpromoburguer img{
+  max-width: 625px;
+}
+
+.mainbutton:hover{
+  border: 2px solid black
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 15px;
+}
+
+/*grid*/
+
+.sectiongrid1{
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.sectiongrid2{
+  background-color: #fbbe00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bi-hand-thumbs-up{
+  font-size: 2rem;
+}
+
+.grid-item-inicio{
+  display: flex;
+  font-size: 2rem;
+}
+
+.grid-item-inicio1{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  border: 2px dashed black;
+  padding: 10px;
+}
+
+.grid-item-inicio1:hover  {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  border: 2px dashed black;
+  padding: 20px;
+}
+
+.sectiongrid3{
+  background-image: url(../img/Funciones-de-un-jefe-de-cocina-en-un-restaurante-1.jpg);
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectiongrid4{
+  font-family: 'Bebas Neue', sans-serif;
+  display: flex;
+  border: 2px dashed black;
+  padding: 10px;
+}
+
+.sectiongrid4:hover{
+  font-family: 'Bebas Neue', sans-serif;
+  display: flex;
+  border: 2px dashed black;
+  padding: 15px;
+  font-size: 50px;
+}
+
+.main1{
+  background-color: #42213D;
+  text-align: center;
+  padding: 5px;
+  margin: 40px;
+  border: 2px solid white;
+}
+
+.inicio1{
+  color: white;
+}*/
+
+/*productos*/
+
+.mainproductos{
+  height: 100vh;
+}
+
+.nuestromenu0{
+  display: flex;
+  justify-content: center;
+}
+
+.secciones {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 500px;
+}
+
+.nuestromenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  border: 2px solid black;
+  border-radius: 50% 20% / 10% 40%;
+  background-color:  #FFAE03;
+  padding: 1.5rem;
+  font-size: 30px;
+}
+
+.nuestromenu1{
+  font-size: 25px;
+}
+
+.productos_0{
+  display: flex;
+  justify-content: center;
+}
+
+.productos_1 {
+  width: 300px;
+  background-color: #ffd65a;
+  color: black;
+  padding: 5px;
+  display: inline-block;
+}
+
+.productos_imagen{
+  width: 100%;
+}
+
+.productos_titulo{
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.productos_parrafo{
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  border: 2px dashed black;
+  padding: 2px;
+}
+.productos_boton{
+  border: none;
+}
+
+.productos_imagen,
+.productos_titulo,
+.productos_parrafo{
+  margin-bottom: 10px;
+}
+
+.promoproductos1{
+  color: rgb(161, 24, 24);
+  font-size: 30px;
+  font-weight: 30px;
+}
+
+/*footer*/
+footer{
+  height: 15vh;
+  color: black;
+  background-color: #FFAE03;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_footer2{
+  font-family: 'Staatliches', cursive;
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.footer1{
+  color:black;
+}
+
+.footer2{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.redes{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+}
+
+/*media quaries*/
+
+@media (max-width:1440px){
+  /*inicio*/
+  .maininicio1{
+    margin: 3rem;
+  }
+
+   /*section grid*/
+
+   .bi-hand-thumbs-up{
+    font-size: 2rem;
+  }
+  
+  .grid-item-inicio{
+    display: flex;
+    font-size: 2rem;
+    margin: 1.25rem;
+  }
+  
+  .grid-item-inicio1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.50rem;
+    border: 2px dashed black;
+    padding: 10px;
+  }
+
+  .sectiongrid3{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:1024px){
+  /*inicio*/
+  .maininicio1{
+    margin: 3rem;
+  }
+
+   /*section grid*/
+   .bi-hand-thumbs-up{
+    font-size: 1.5rem;
+  }
+  
+  .grid-item-inicio{
+    display: flex;
+    font-size: 1.5rem;
+    margin: 0.50rem;
+  }
+  
+  .grid-item-inicio1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.25rem;
+    border: 2px dashed black;
+    padding: 10px;
+  }
+
+  .sectiongrid3{
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width:850px) {
+  
+  /*inicio*/
+
+  .maininicio{
+    height: 120vh;
+  }
+
+  .maininicio1{
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  .maintexto{
+    padding-inline: 2rem;
+    padding-top: 5rem;
+
+  }
+
+  .mainbutton{
+    border-color: black;
+  }
+
+  .mainpromoburguer{
+    padding-top: 0%;
+
+  }
+  /*section grid*/
+  .bi-hand-thumbs-up{
+    font-size: 1.5rem;
+  }
+  
+  .grid-item-inicio{
+    display: flex;
+    font-size: 1.5rem;
+    margin: 0.50rem;
+  }
+  
+  .grid-item-inicio1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.25rem;
+    border: 2px dashed black;
+    padding: 10px;
+  }
+
+  .sectiongrid3{
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width:670px){
+  /*inicio*/
+  .maininicio1{
+    margin: 3rem;
+  }
+
+   /*section grid*/
+
+   .bi-hand-thumbs-up{
+    font-size: 2rem;
+  }
+  
+  .grid-item-inicio{
+    display: flex;
+    font-size: 2rem;
+    margin: 1.25rem;
+  }
+  
+  .grid-item-inicio1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.50rem;
+    border: 2px dashed black;
+    padding: 10px;
+  }
+
+  .sectiongrid3{
+    font-size: 1.50rem;
+  }
+}
+
+@media (max-width:615px){
+  /*header*/
+  .header{
+    flex-direction: column;
+  }
+  .titulo{
+    gap: 0.50rem;
+  }
+  /*inicio*/
+
+  .maininicio{
+    background-image: url(../img/fondohamburguesas.logo.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mainpromo{
+    font-size: 1.5rem;
+    border: 2px dashed black;
+    padding: 5px;
+  }
+  
+  .maintexto{
+    font-size: 3rem;
+    margin: 2rem; 
+  }
+  
+  .mainbutton{
+    border: 2px solid black;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 10px;
+  }
+  
+  .mainpromoburguer img{
+    max-width: 480px;
+  }
+  /*seccion grid inicio*/
+
+  .sectiongrid1{
+    height: 95vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .sectiongrid2{
+    background-color: #fbbe00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .bi-hand-thumbs-up{
+    font-size: 2rem;
+  }
+  
+  .grid-item-inicio{
+    margin: 0.75rem;
+  }
+  
+  .sectiongrid4{
+    margin: 0.75rem;
+  }
+  /*footer*/
+
+  footer{
+    height: 20vh; 
+  }
+  
+  .logo_footer2{
+    padding-top: 1rem;
+  }
+  
+  .footer1{
+    padding-top: 1.75rem;
+    font-size: 0.85rem;
+  }
+  
+  .footer2{
+    gap: 0.25rem;  
+  }
+}
+
+@media (max-width:480px){
+  .mainpromoburguer img{
+    max-width: 420px;
+  }
+}
+
+@media (max-width:415px){
+  /*header*/
+  .header{
+    flex-direction: column;
+  }
+  .titulo{
+    gap: 0.50rem;
+  }
+  /*inicio*/
+
+  .mainpromo{
+    font-size: 1.5rem;
+    border: 2px dashed black;
+    padding: 5px;
+  }
+  
+  .maintexto{
+    font-size: 3rem;
+    margin: 2rem; 
+  }
+  
+  .mainbutton{
+    border: 2px solid black;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 10px;
+  }
+  
+  .mainpromoburguer img{
+    max-width: 360px;
+  }
+  /*seccion grid inicio*/
+
+  .sectiongrid1{
+    height: 95vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .sectiongrid2{
+    background-color: #fbbe00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .bi-hand-thumbs-up{
+    font-size: 2rem;
+  }
+  
+  .grid-item-inicio{
+    margin: 0.75rem;
+  }
+  
+  .sectiongrid4{
+    margin: 0.75rem;
+  }
+  /*footer*/
+
+  footer{
+    height: 20vh; 
+  }
+  
+  .logo_footer2{
+    padding-top: 1rem;
+  }
+  
+  .footer1{
+    padding-top: 1.75rem;
+    font-size: 0.85rem;
+  }
+  
+  .footer2{
+    gap: 0.25rem;  
+  }
+}
+
+@media (max-width:415px){
+  .titulo{
+    font-size: 14px;
+  }
+
+  .footer2{
+    font-size: 11px; 
+  }
+}
+
+@media (max-height:800px) {
+  .maininicio{
+    height: 135vh;
+  }
+}
+
+@media (max-height:715px) {
+  .maininicio{
+    height: 150vh;
+  }
+}
+
+@media (max-height:640px) {
+  .maininicio{
+    height: 165vh;
+  }
+}
+
+@media (max-height:580px) {
+  .maininicio{
+    height: 175vh;
+  }
+}
+
+@media (max-height:510px) {
+  .maininicio{
+    height: 175vh;
+  }
+}
