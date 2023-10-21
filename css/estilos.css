@@ -137,7 +137,7 @@ a {
 
 .contenedornosotros{
   background-color: #ffd65a;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -368,7 +368,7 @@ a {
 /*productos*/
 
 .mainproductos{
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .nuestromenu0{
@@ -448,7 +448,7 @@ a {
 
 /*footer*/
 footer{
-  height: 15vh;
+  min-height: 15vh;
   color: black;
   background-color: #FFAE03;
   display: flex;
@@ -590,6 +590,34 @@ footer{
   .sectiongrid3{
     font-size: 1.75rem;
   }
+
+  /*seccion quienes somos o nosotros*/
+
+  .contenedornosotros{
+  background-color: #ffd65a;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nosotros1"
+    "nosotros2"
+    "nosotros4"
+    "nosotros3"
+    ;
+  }
+
+  /*seccion locales*/
+
+  .div3__titulo__locales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div4__titulo__locales{
+    padding: 2rem;
+  }
 }
 
 @media (max-width:670px){
@@ -626,6 +654,7 @@ footer{
   /*header*/
   .header{
     flex-direction: column;
+    min-width: 400px;
   }
   .titulo{
     gap: 0.50rem;
@@ -686,10 +715,25 @@ footer{
   .sectiongrid4{
     margin: 0.75rem;
   }
+
+  /*seccion locales*/
+
+  .div3__titulo__locales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div4__titulo__locales{
+    padding: 2rem;
+  }
+
   /*footer*/
 
   footer{
-    height: 20vh; 
+    min-height: 20vh;
+    min-width: 400px; 
   }
   
   .logo_footer2{
@@ -769,14 +813,48 @@ footer{
   .sectiongrid4{
     margin: 0.75rem;
   }
+
+  /*productos o menu*/
+  .mainproductos{
+    min-height: 250vh;
+  }
+  
+  .productos_0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .productos_1 {
+    width: 300px;
+    background-color: #ffd65a;
+    color: black;
+    display: inline-block;
+  }
+  
+  .productos_imagen{
+    width: 100%;
+  }
+  
+  .productos_titulo{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+  }
+  
+  .productos_parrafo{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    border: 2px dashed black;
+    padding: 2px;
+  }
+
   /*footer*/
 
   footer{
-    height: 20vh; 
-  }
-  
-  .logo_footer2{
-    padding-top: 1rem;
+    min-height: 15vh;
   }
   
   .footer1{
@@ -789,9 +867,13 @@ footer{
   }
 }
 
-@media (max-width:415px){
+@media (max-width:375px){
   .titulo{
     font-size: 14px;
+  }
+  
+  .footer{
+    min-width: 200px;
   }
 
   .footer2{
