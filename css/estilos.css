@@ -156,6 +156,10 @@ a {
   flex-direction: column;
 }
 
+.imglogonosotros{
+  max-width: 400px;
+}
+
 .grid-item-nosotros2{
   background-image: url(../img/fondo.hamburgueseria.jpg);
   grid-area: nosotros2;
@@ -179,6 +183,10 @@ a {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
   font-weight: 1rem;
+}
+
+.imglogonosotros2{
+  max-width: 350px;
 }
 
 .bi-recycle{
@@ -881,32 +889,66 @@ footer{
   }
 }
 
+@media (max-width:320px) {
+  /*header*/
+  .header{
+    min-width: 150px;
+  }
+  
+  /*inicio*/
+
+  /*main*/
+  .maininicio{
+    min-width: 150px;
+  }
+
+  .mainpromoburguer img {
+    max-width: 300px;
+
+  }
+    /*footer*/
+  footer{
+    min-height: 20vh;
+    min-width: 150px; 
+  }
+
+  /*nosotros*/
+
+  .imglogonosotros{
+    max-width: 300px;
+  }
+
+  .imglogonosotros2{
+    max-width: 250px;
+  }
+}
+
 @media (max-height:800px) {
   .maininicio{
-    height: 135vh;
+    min-height: 135vh;
   }
 }
 
 @media (max-height:715px) {
   .maininicio{
-    height: 150vh;
+    min-height: 150vh;
   }
 }
 
 @media (max-height:640px) {
   .maininicio{
-    height: 165vh;
+    min-height: 165vh;
   }
 }
 
 @media (max-height:580px) {
   .maininicio{
-    height: 175vh;
+    min-height: 175vh;
   }
 }
 
 @media (max-height:510px) {
   .maininicio{
-    height: 175vh;
+    min-height: 175vh;
   }
 }
