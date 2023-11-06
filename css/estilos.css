@@ -6,6 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Blinker&family=Luckiest+Guy&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Unbounded:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Unbounded:wght@200&display=swap');
+
 
 * {
     margin: 0;
@@ -14,7 +18,8 @@
   }
 
 body{
-  background-color: #ffd65a;
+  background: rgb(255,214,90);
+  background: linear-gradient(90deg, rgba(255,214,90,1) 4%, rgba(247,179,107,1) 33%, rgba(255,214,90,1) 65%, rgba(247,179,107,1) 93%, rgba(246,153,1,1) 100%);
   font-family: 'Bebas Neue', sans-serif;
   color: black;
 }
@@ -25,7 +30,29 @@ body{
   justify-content: space-around;
   align-items: center;
   padding: 1rem 5rem;
-  background-color: #FFAE03;
+  background-color: transparent;
+}
+
+.header__nav{
+  padding: 0.60rem;
+  margin-left: 175px;
+}
+
+.header__lista{
+  color: black;
+  align-items: center;
+  font-size: 1.25rem;
+}
+.header__delivery{
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(228, 84, 84);
+  font-size: 22px;
+}
+
+.header__lista:hover{
+  text-decoration: underline black;
 }
 
 .logo{
@@ -33,28 +60,26 @@ body{
   align-items: center;
 }
 
-.logo_titulo{
-  font-family: 'Staatliches', cursive;
-  color: black;
+.logo__tamaño{
+  width: 210px;
 }
 
-.titulo{
+.header__titulo{
   list-style: none;
   display: flex;
-  gap: 1rem;
-}
-
-.titulo-link{
-  color: black;
-  font-family: 'Blinker', sans-serif;
+  gap: 1.50rem;
+  align-items: center;
+  font-weight: 4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
     text-decoration: none;
-}
+} 
+/*header*/
+
 
 /*seccion registrarme*/
-
 .menu__registrarme{
   height: 100vh;
   background-image: url(../img/fondo.naranja.registrarme.webp);
@@ -127,17 +152,42 @@ a {
 }
 
 .a__redes__enlaces__registrarme{
-  padding: 10px;
+  padding: 8px;
   border-radius: 20px;
   border: 2px solid black;
   background-color: rgb(233, 175, 68);
 }
+/*seccion registrarme*/
+
 
 /*seccion quienes somos o nosotros*/
 
+.nosotros__subtitulo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  background-color: #E29505;
+}
+
+.seccion__nosotros{
+  /*NADA*/
+}
+
+.sobre__nosotros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  font-size: 5rem;
+  color: #000000;
+}
+
 .contenedornosotros{
-  background-color: #ffd65a;
+  background: linear-gradient(to top, #fbbe00, rgb(230, 169, 56), rgb(216, 133, 24) yellow, rgb(218, 218, 99));
   min-height: 100vh;
+  margin: 8px; /*para separar los 4 grid de los margernes del costado*/
+  margin-bottom: 100px;
+  gap: 1rem; /*gap para separar los 4 grid entre si*/
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -148,12 +198,14 @@ a {
 }
 
 .grid-item-nosotros1{
-  background-color:  #ffd65a;
+  background: linear-gradient(to right, #fbbe00, rgb(230, 169, 56), rgb(216, 133, 24));
   grid-area: nosotros1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .imglogonosotros{
@@ -169,7 +221,13 @@ a {
   flex-direction: column;
   padding: 1rem 4rem;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
+  border: 1px solid black;
+  transition: 1s;
+  border-radius: 5px;
+}
+.grid-item-nosotros2:hover{
+  transform: translateX(-450px) scale(1.05);
 }
 
 .grid-item-nosotros3{
@@ -181,8 +239,14 @@ a {
   flex-direction: column;
   padding: 1rem 4rem;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 1rem;
+  border: 1px solid black;
+  transition: 1s;
+  border-radius: 5px;
+}
+.grid-item-nosotros3:hover{
+  transform: translateX(450px) scale(1.05);
 }
 
 .imglogonosotros2{
@@ -195,74 +259,95 @@ a {
 }
 
 .grid-item-nosotros4{
-  background-color:  #ffd65a;
+  background: linear-gradient(to right, #fbbe00, rgb(230, 169, 56), rgb(216, 133, 24));
   grid-area: nosotros4;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
 }
+/*seccion quienes somos o nosotros*/
+
 
 /*seccion locales*/
-
-.container__locales{
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-inline: 1.5rem;
+.container__locales__titulo{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  background-color: #E29505;
 }
 
 .div1__titulo__locales{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
-  font-size: 1.5rem;
-}
-
-.texto__locales{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.50rem;
-}
-
-.div2__titulo__locales  {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 36px;
 }
 
 .titulo__locales{ 
-  border: 2px solid black;
-  border-radius: 50% 20% / 10% 40%;
-  background-color:  #FFAE03;
-  padding: 1.5rem;
+  font-size: 5rem;
+  color: #000000;
+  justify-content: center;
+  align-items: center;
 }
 
-.div3__titulo__locales{
+.container__locales__info{
+  min-height: 40vh;
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
 }
 
-.div4__titulo__locales{
-  border:2px solid black;
-  padding: 10px;
-  margin: 10px;
-  max-width: 250px;
+.caja__locales{
+  width: 400px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  border: 5px solid rgb(218, 165, 67);
+  border-radius: 4px;
+  box-shadow: 10px 10px 10px 5px rgb(37, 35, 35);
 }
 
-.texto1__locales{
-  border-bottom: 2px solid black;
+.caja__locales img{
+  width: 100%;
+  height: 100%;
 }
+
+.locales__capa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:white;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(0);
+  transition: .1s;
+}
+.caja__locales:hover .locales__capa{
+  transform: scale(1);
+}
+
+.locales__capa__titulo{
+  font-size: 4rem;
+}
+
+/*seccion locales*/
+
 
 /*seccion inicio*/
-
 .maininicio{
-  height: 100vh;
   background-image: url(../img/fondohamburguesas.logo.jpg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto;
+  flex-wrap: wrap;
 }
 
 .maininicio1{
@@ -273,32 +358,56 @@ a {
 }
 
 .mainpromo{
-  font-size: 1.5rem;
+  font-size: 2.50rem;
   border: 2px dashed black;
   padding: 5px;
 }
 
 .maintexto{
-   font-size: 3rem;
+  font-size: 6rem;
+}
+
+.mainmonster{
+  font-size: 3rem;
 }
 
 .mainbutton{
   border: 2px solid black;
+  border-radius: 5px;
   font-family: 'Bebas Neue', sans-serif;
   padding: 10px;
+  transition: 1s;
+  background-color: rgb(250, 178, 43);
+}
+
+.mainbutton:hover{
+  background-color: rgb(201, 130, 0);
 }
 
 .mainpromoburguer img{
   max-width: 625px;
+
+  animation-name: moverse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
-.mainbutton:hover{
-  border: 2px solid black
-  font-family: 'Bebas Neue', sans-serif;
-  padding: 15px;
+@keyframes moverse {
+  0% {
+    top: 0px;
+    transform: translateY(0px);
+  }
+  50% {
+    top: -100px; /* Mover arriba */
+    transform: translateY(-80px);
+  }
+  0% {
+    top: 0px;
+    transform: translateY(0px);
+  }
 }
 
-/*grid*/
+/*seccion grid*/
 
 .sectiongrid1{
   height: 50vh;
@@ -308,7 +417,7 @@ a {
 }
 
 .sectiongrid2{
-  background-color: #fbbe00;
+  background: linear-gradient(to right, #fbbe00, rgb(230, 169, 56), rgb(216, 133, 24));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,19 +436,19 @@ a {
 .grid-item-inicio1{
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.5rem;
-  border: 2px dashed black;
+  border: 2px solid black;
   padding: 10px;
+  transition: 1s;
 }
 
 .grid-item-inicio1:hover  {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.8rem;
-  border: 2px dashed black;
-  padding: 20px;
+  transform: scale(1.25);
+  background-color: azure;
 }
 
 .sectiongrid3{
   background-image: url(../img/Funciones-de-un-jefe-de-cocina-en-un-restaurante-1.jpg);
+  background-size: cover;
   font-size: 3rem;
   display: flex;
   align-items: center;
@@ -349,16 +458,14 @@ a {
 .sectiongrid4{
   font-family: 'Bebas Neue', sans-serif;
   display: flex;
-  border: 2px dashed black;
+  border: 4px solid black;
   padding: 10px;
+  transition: 1s;
 }
 
 .sectiongrid4:hover{
-  font-family: 'Bebas Neue', sans-serif;
-  display: flex;
-  border: 2px dashed black;
-  padding: 15px;
-  font-size: 50px;
+  transform: scale(1.25);
+  background-color: white;
 }
 
 .main1{
@@ -372,9 +479,10 @@ a {
 .inicio1{
   color: white;
 }*/
+/*seccion inicio*/
+
 
 /*productos*/
-
 .mainproductos{
   min-height: 100vh;
 }
@@ -382,13 +490,12 @@ a {
 .nuestromenu0{
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
+  background-color: #E29505;
 }
 
 .secciones {
- display: flex;
- flex-direction: column;
- align-items: center;
- width: 500px;
+ /*NADA*/
 }
 
 .nuestromenu{
@@ -396,15 +503,21 @@ a {
   justify-content: center;
   align-items: center;
   margin: 40px;
-  border: 2px solid black;
-  border-radius: 50% 20% / 10% 40%;
-  background-color:  #FFAE03;
-  padding: 1.5rem;
-  font-size: 30px;
+  font-size: 5rem;
+  color: #000000;
 }
 
-.nuestromenu1{
-  font-size: 25px;
+.productos__subtitulo__seccion{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.productos__subtitulo__seccion__size{
+  font-size: 8rem;
+  color: #fbbe00;
+  -webkit-text-stroke: 2px #000000;
+  text-shadow: 4px 4px 4px #000;
 }
 
 .productos_0{
@@ -414,7 +527,6 @@ a {
 
 .productos_1 {
   width: 300px;
-  background-color: #ffd65a;
   color: black;
   padding: 5px;
   display: inline-block;
@@ -454,43 +566,110 @@ a {
   font-weight: 30px;
 }
 
-/*footer*/
-footer{
-  min-height: 15vh;
-  color: black;
-  background-color: #FFAE03;
+.productos__postres{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.productos__postres__caja{
+  margin: 20px;
+}
+
+.productos__postres__titulo{
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid black;
 }
 
-.logo_footer2{
-  font-family: 'Staatliches', cursive;
-  color: black;
+.productos__postres__parrafo{
   display: flex;
   justify-content: center;
-  padding: 10px;
+  border: 2px dashed black;
+  font-size: 1.10rem;
+}
+
+/*productos*/
+
+
+/*footer*/
+footer{
+  height: auto;
+  color: black;
+  background-color: #FFAE03;
+}
+
+.logo_footer1{
+  display: flex;
+  justify-content: center;
 }
 
 .footer1{
   color:black;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 20px;
+  border-bottom: 1px solid grey;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lista__footer{
+  transition: 1s;
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lista__footer:hover{
+  color: yellow;
 }
 
 .footer2{
   list-style: none;
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  border-bottom: 2px solid rgb(0, 0, 0);
+  list-style: none;
 }
-.redes{
+
+.footer__subtitulos{
+  text-decoration: underline black;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.footer3{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 180px;
+}
+
+.footer4{
+  list-style: none;
+  font-size: 40px;
+}
+
+.footer4__redes{
+  color: #000000;
+  transition: 1s;
+}
+
+.footer4__redes:hover{
+  color: yellow;
+}
+
+.footer5{
   display: flex;
   justify-content: center;
-  padding: 10px;
-  align-items: center;
+  margin-top: 10px;
 }
+/*footer*/
+
 
 /*media quaries*/
-
 @media (max-width:1440px){
   /*inicio*/
   .maininicio1{

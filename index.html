@@ -3,38 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio-BURGUER'S MOM</title>
-    <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Inicio-ROYALE'S CHEESE</title>
+    <link rel="shortcut icon" href="./img/Logito.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="./img/logo.png" alt="Hamburguesa logo" width="50" height="50">
-            <h1 class="logo_titulo">BURGUER'S MOM</h1>
-        </div>
-         <nav>
-             <ul class="titulo">
-                 <li><a href="./index.html" class="titulo-link">INICIO</a></li>
-                 <li><a href="./pages/productos.html" class="titulo-link">MENU</a></li>
-                 <li><a href="./pages/locales.html" class="titulo-link">LOCALES</a></li>
-                 <li><a href="./pages/quienessomos.html" class="titulo-link">NOSOTROS</a></li>
-                 <li><a href="./pages/registrarme.html" class="titulo-link"s>REGISTRARME</a></li>
-             </ul>
-         </nav>
-    </header> 
-    <main>
+    <main class="main">
         <section class="maininicio">
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="header__titulo">
+                    <li><a href="./index.html" class="header__lista titulo-link">INICIO</a></li>
+                    <li><a href="./pages/productos.html" class="header__lista titulo-link">MENU</a></li>
+                    <li><a href="./pages/locales.html" class="header__lista titulo-link">LOCALES</a></li>
+                    <li>
+                    <div class="logo">
+                       <img src="./img/Logito.png" alt="Hamburguesa logo" class="logo__tamaño">
+                    </div>
+                    </li>
+                    <li><a href="./pages/quienessomos.html" class="header__lista titulo-link">NOSOTROS</a></li>
+                    <li><a href="./pages/registrarme.html" class="header__lista titulo-link"s>REGISTRARME</a></li>
+                    <li><a href="https://www.pedidosya.com" class="header__lista header__delivery titulo-link" target="_blank">DELIVERY<i class="bi bi-car-front-fill"></i></a></li>
+                </ul>
+            </nav>
+       </header> 
         <div class="maininicio1">
             <div class="maintexto">
                 <h4 class="mainpromo">Promocion de la semana!</h4>
-                <h2 class="mainmonster">MONSTER BURGUER!</h2>
+                <h1 class="mainmonster">MONSTER BURGUER!</h1>
                 <h2>2 x 1 <i class="bi bi-chat-left-heart-fill"></i></h2>
-                <a href="./pages/productos.html" class="mainbutton titulo-link">ver mas</a>
+                <a href="./pages/productos.html" class="mainbutton titulo-link" style="color: black;">ver mas</a>
             </div>
             <div class="mainpromoburguer">
-                <img src="./img/Hamburguesa.inicio.png" alt="">
+                <img src="./img/Hamburguesa.inicio.png" alt="" >
             </div>
         </div>
         </section>
@@ -44,38 +48,40 @@
                 <h5 class="grid-item-inicio">Conoce nuestro menu!</h3>
                 <h3 class="grid-item-inicio">LAS MEJORES BURGUER'S</h3>
                 <p class="grid-item-inicio">Nuestras hamburguesas de 100% carne vacuna, con el mejor pan de papa.</p>
-                <a href="./pages/productos.html" class="titulo-link grid-item-inicio1">ver los productos</a>
+                <a href="./pages/productos.html" class="titulo-link grid-item-inicio1" style="color: black; ">ver los productos</a>
             </div>
-            <div class="sectiongrid3"><a href="./pages/quienessomos.html" class="titulo-link sectiongrid4">¿Queres saber mas de nosotros?</a></div>
+            <div class="sectiongrid3"><a href="./pages/quienessomos.html" class="titulo-link sectiongrid4" style="color: black;">¿Queres saber mas de nosotros?</a></div>
         </section>
     </main>
     <footer>
         <section>
             <div class="logo_footer1">
-                <h2 class="logo_footer2">BURGUER'S MOM</h2>
+                <img src="./img/Logito.png" alt="" width="200" height="200" class="logo_footer2">
+            </div>
             <div class="footer1">
                 <ul class="footer2">
-                    <li><a href="./index.html" class="titulo-link">INICIO</a></li>
-                    <div>-</div>
-                    <li><a href="./pages/productos.html" class="titulo-link">PRODUCTOS</a></li>
-                    <div>-</div>
-                    <li><a href="./pages/locales.html" class="titulo-link">MENU</a></li>
-                    <div>-</div>
-                    <li><a href="./pages/quienessomos.html" class="titulo-link">NOSOTROS</a></li>
-                    <div>-</div>
-                    <li><a href="./pages/registrarme.html" class="titulo-link"s>REGISTRARME</a></li>
+                    <h2 style="text-decoration: underline black;">Royale's Cheese</h2>
+                    <li><a href="./index.html" class="lista__footer titulo-link">INICIO</a></li>
+                    <li><a href="./pages/productos.html" class="lista__footer titulo-link">PRODUCTOS</a></li>
+                    <li><a href="./pages/locales.html" class="lista__footer titulo-link">LOCALES</a></li>
+                    <li><a href="./pages/quienessomos.html" class="lista__footer titulo-link">NOSOTROS</a></li>
+                    <li><a href="./pages/registrarme.html" class="lista__footer titulo-link">REGISTRARME</a></li>
+                    <li><a href="https://www.pedidosya.com" class="lista__footer titulo-link">DELIVERY</a></li>
+                </ul>
+                <ul class="footer3">
+                    <li><img src="./img/CertificadoNatural.png" alt="" width="250" height="250"></li>
+                </ul>
+                <ul class="footer4">
+                    <h2 style="text-decoration: underline black;">Redes</h2>
+                    <li><a href="#" class="footer4__redes titulo-link"><i class="bi bi-instagram"></i></a></li>
+                    <li><a href="#" class="footer4__redes titulo-link"><i class="bi bi-youtube"></i></a></li>
+                    <li><a href="#" class="footer4__redes titulo-link"><i class="bi bi-twitter-x"></i></a></li>
                 </ul>
             </div>
-            <div class="redes">
-                SEGUINOS
-                <p>
-                    <a href="https://facebook.com"><img src="./img/facebook.png" alt="Logo de facebook" width="24" height="24" target="_blank"></a> 
-                    <a href="https://instagram.com"><img src="./img/instagram.png.png" alt="Logo de instagram" width="24" height="24" target="_blank"></a>
-                    <a href="https://youtube.com"><img src="./img/youtube.png" alt="Logo de youtube" width="24" height="24" target="_blank"></a>
-                </p>
+            <div class="footer5">
+               Royale's Cheese<i class="bi bi-p-circle"></i>2023. By powered.
             </div>
         </section>
     </footer>
-
 </body>
 </html>
