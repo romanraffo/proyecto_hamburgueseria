@@ -25,57 +25,76 @@ body{
 }
 
 /*header*/
-.header{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem 5rem;
-  background-color: transparent;
+
+.header__img__escondida__responsive{
+  display: none;
+  justify-content: center;
 }
 
-.header__nav{
-  padding: 0.60rem;
-  margin-left: 175px;
-}
-
-.header__lista{
-  color: black;
-  align-items: center;
-  font-size: 1.25rem;
-}
-.header__delivery{
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 20px;
-  padding: 10px;
-  background-color: rgb(228, 84, 84);
-  font-size: 22px;
-}
-
-.header__lista:hover{
-  text-decoration: underline black;
-}
-
-.logo{
-  display: flex;
-  align-items: center;
-}
-
-.logo__tamaño{
+.logo__tamaño__responsive{
   width: 210px;
 }
 
+.bg-body-tertiary{
+  --bs-bg-opacity: none; /*provoca bordes blanco tanto en top y bottom*/
+}
+
+.header__father{
+  background-color: transparent;
+}
+
+.header{
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 1rem 5rem;
+background-color: transparent;
+}
+
+.header__nav{
+padding: 0.60rem;
+margin-left: 175px;
+}
+
+.header__lista{
+color: black;
+align-items: center;
+font-size: 1.25rem;
+}
+.header__delivery{
+border: 2px solid rgb(0, 0, 0);
+border-radius: 20px;
+padding: 10px;
+background-color: rgb(228, 84, 84);
+font-size: 22px;
+}
+
+.header__lista:hover{
+text-decoration: underline black;
+}
+
+.logo{
+display: flex;
+align-items: center;
+}
+
+.logo__tamaño{
+width: 210px;
+}
+
 .header__titulo{
-  list-style: none;
-  display: flex;
-  gap: 1.50rem;
-  align-items: center;
-  font-weight: 4rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+list-style: none;
+display: flex;
+gap: 1.50rem;
+align-items: center;
+font-weight: 4rem;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 } 
+
 /*header*/
 
 
@@ -612,7 +631,6 @@ footer{
   justify-content: space-around;
   list-style: none;
   font-size: 20px;
-  border-bottom: 1px solid grey;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -664,47 +682,92 @@ footer{
 .footer5{
   display: flex;
   justify-content: center;
+  border-top: 1px solid grey;
   margin-top: 10px;
+}
+
+.footer__img__escondida__responsive{
+  display: none;
 }
 /*footer*/
 
 
 /*media quaries*/
 @media (max-width:1440px){
+  /*header*/
+    .header__nav{
+    padding: 0.60rem;
+    margin-left: 0px;
+  }    
+}
+
+@media (max-width:1230px){
+  /*header*/
+  .header__lista{
+    font-size: 1rem;
+    }
+  .header__delivery{
+    font-size: 22px;
+  }
+  .bi-car-front-fill{
+    display: none;
+  }
+  
   /*inicio*/
-  .maininicio1{
-    margin: 3rem;
-  }
-
-   /*section grid*/
-
-   .bi-hand-thumbs-up{
-    font-size: 2rem;
-  }
-  
-  .grid-item-inicio{
-    display: flex;
-    font-size: 2rem;
-    margin: 1.25rem;
-  }
-  
-  .grid-item-inicio1{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.50rem;
-    border: 2px dashed black;
-    padding: 10px;
-  }
-
-  .sectiongrid3{
-    font-size: 2rem;
+  .sectiongrid4{
+  font-size: 2rem;
+  border: 2px solid black;
   }
 }
 
-@media (max-width:1024px){
-  /*inicio*/
-  .maininicio1{
-    margin: 3rem;
+@media (max-width:1100px){
+  /*header*/
+  .logo__tamaño{
+    width: 190px;
+    }
+  .header__lista{
+    font-size: 1rem;
+    }
+  .header__delivery{
+    font-size: 15px;
   }
+  .bi-car-front-fill{
+    display: none;
+  } 
+}
+
+@media (max-width:1042px){
+  /*header*/
+  .logo__tamaño{
+    width: 180px;
+    }
+  .header__lista{
+    font-size: 1rem;
+    }
+  .header__delivery{
+    font-size: 12px;
+  }
+  .bi-car-front-fill{
+    display: none;
+  } 
+}
+
+@media (max-width:1024px){
+  /*header*/
+  .logo__tamaño{
+    width: 158px;
+    }
+  .header__lista{
+    font-size: 1rem;
+    }
+  .header__delivery{
+    font-size: 12px;
+    margin-bottom: 100px;
+  }
+  .bi-car-front-fill{
+    display: none;
+  } 
+  /*inicio*/
 
    /*section grid*/
    .bi-hand-thumbs-up{
@@ -720,21 +783,131 @@ footer{
   .grid-item-inicio1{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.25rem;
-    border: 2px dashed black;
-    padding: 10px;
   }
 
   .sectiongrid3{
     font-size: 1.75rem;
+  }
+
+  /*nosotros*/
+  .grid-item-nosotros2:hover{
+    transform: none;
+  }
+
+  .grid-item-nosotros3:hover{
+    transform: none;
+  }
+}
+
+@media (max-width:990px){
+  .header__img__escondida__responsive{
+      display: flex;
+  }
+
+  .navbar-toggler{
+      margin-bottom: 5px;
+  }
+
+  .header__father{
+      display: flex;
+      justify-content: flex-start;
+  }
+  .header__father{
+      display: flex;
+      justify-content: center;
+  }
+  .header{
+      background: rgb(255,214,90);
+      height: 70vh;
+      border: 2px solid black;  
+      display: flex;
+      justify-content: center;
+      padding: 0rem;        
+  }
+  .header__nav{
+      display: flex;
+      justify-content: start;
+      margin-left:0px;
+  }
+  .header__titulo{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 1rem;
+  }
+  .header__lista{
+      color: black;
+      align-items: center;
+      font-size: 1.60rem;
+      width: 40px;
+      color: rgb(0, 0, 0);
+    }
+
+  .logo__tamaño{
+      display: none;
+  }
+  
+  .header__delivery{
+      border: 2px solid rgb(0, 0, 0);
+      border-radius: 20px;
+      padding: 10px;
+      background-color: rgb(228, 84, 84);
+      font-size: 30px;
+    }
+}
+
+@media (max-width:975px){
+  /*inicio*/
+  .navbar{
+    margin-bottom: 60px;
+  }
+  .mainpromoburguer img{
+    max-width: 590px;
+  }
+  .maintexto{
+    margin-left: 20px;
+  }
+}
+
+@media (max-width:885px){
+  /*inicio*/
+  .navbar{
+    margin-bottom: 60px;
+  }
+  .mainpromoburguer img{
+    max-width: 590px;
+  }
+  .maintexto{
+    margin-left: 20px;
+  }
+  .mainbutton{
+    font-size: 4rem;
+  }
+  .sectiongrid1{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .grid-item-inicio1{
+    background-color: white;
+  }
+  .sectiongrid4{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
   }
 }
 
 @media (max-width:850px) {
   
   /*inicio*/
+  .navbar{
+    margin-bottom: 0px;
+  }
 
   .maininicio{
-    height: 120vh;
+    min-height: 120vh;
   }
 
   .maininicio1{
@@ -745,7 +918,7 @@ footer{
   .maintexto{
     padding-inline: 2rem;
     padding-top: 5rem;
-
+    font-size: ;
   }
 
   .mainbutton{
@@ -754,8 +927,14 @@ footer{
 
   .mainpromoburguer{
     padding-top: 0%;
+  }
+
+  .mainpromoburguer img{
+    max-width: 510px;
+    margin-top: 100px;
 
   }
+
   /*section grid*/
   .bi-hand-thumbs-up{
     font-size: 1.5rem;
@@ -763,15 +942,14 @@ footer{
   
   .grid-item-inicio{
     display: flex;
+    justify-content: center;
     font-size: 1.5rem;
-    margin: 0.50rem;
+    margin: 0.75rem;
   }
   
   .grid-item-inicio1{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.25rem;
-    border: 2px dashed black;
-    padding: 10px;
   }
 
   .sectiongrid3{
@@ -807,13 +985,55 @@ footer{
   }
 }
 
-@media (max-width:670px){
-  /*inicio*/
-  .maininicio1{
-    margin: 3rem;
+@media (max-width:768px){
+  .sectiongrid1{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .footer2{
+    
+  }
+  .footer3{
+    margin-bottom: 300px;
+    display: none;
+  }
+  .footer__img__escondida__responsive{
+    display: flex;
+    justify-content: center;
   }
 
+  /*locales*/
+
+  .main__locales{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container__locales__info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div1__titulo__locales{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width:670px){
+  /*inicio*/
+
    /*section grid*/
+
+   .sectiongrid1{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 
    .bi-hand-thumbs-up{
     font-size: 2rem;
@@ -828,17 +1048,57 @@ footer{
   .grid-item-inicio1{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.50rem;
-    border: 2px dashed black;
+    border: 2px solid black;
     padding: 10px;
   }
 
   .sectiongrid3{
     font-size: 1.50rem;
   }
+
+  /*productos*/
+  .mainproductos{
+    min-height: 250vh;
+  }
+  
+  .productos_0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productos__postres__posicios__responsive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+  }
+
+  .productos__postres{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+  }
+  .productos__postres__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width:615px){
-  /*header*/
+  .logo__tamaño__responsive{
+    width: 330px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: center;
+  }
+
   .header{
     flex-direction: column;
     min-width: 400px;
@@ -847,14 +1107,7 @@ footer{
     gap: 0.50rem;
   }
   /*inicio*/
-
-  .maininicio{
-    background-image: url(../img/fondohamburguesas.logo.jpg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
+  
   .mainpromo{
     font-size: 1.5rem;
     border: 2px dashed black;
@@ -920,7 +1173,6 @@ footer{
 
   footer{
     min-height: 20vh;
-    min-width: 400px; 
   }
   
   .logo_footer2{
@@ -937,9 +1189,44 @@ footer{
   }
 }
 
+@media (max-width:540px){
+  /*locales*/
+  .titulo__locales{
+    margin-left: 95px;
+  }
+  /*nosotros*/
+  .sobre__nosotros{
+    margin-left: 140px;
+  }
+}
+
 @media (max-width:480px){
+  /*inicio*/
   .mainpromoburguer img{
     max-width: 420px;
+  }
+  /*locales*/
+  .titulo__locales{
+    margin-left: 70px;
+  }
+  .caja__locales{
+  width: 380px;
+  height: 330px;
+  }
+  /*nosotros*/
+  .sobre__nosotros{
+    margin-left: 100px;
+  }
+  /*productos*/
+  .nuestromenu{
+    margin-left: 70px;
+  }
+}
+
+@media (max-width:480px){
+  /*productos*/
+  .nuestromenu{
+    margin-left: 110px;
   }
 }
 
@@ -947,6 +1234,7 @@ footer{
   /*header*/
   .header{
     flex-direction: column;
+    min-width: 300px;
   }
   .titulo{
     gap: 0.50rem;
@@ -1001,7 +1289,14 @@ footer{
     margin: 0.75rem;
   }
 
-  /*productos o menu*/
+  .sectiongrid4 {
+    font-size: 1.50rem;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+  }
+   /*productos o menu*/
+
   .mainproductos{
     min-height: 250vh;
   }
@@ -1014,7 +1309,6 @@ footer{
   
   .productos_1 {
     width: 300px;
-    background-color: #ffd65a;
     color: black;
     display: inline-block;
   }
@@ -1038,6 +1332,32 @@ footer{
     padding: 2px;
   }
 
+  /*locales*/
+  .titulo__locales{
+    margin-left: 55px;
+  }
+
+  .caja__locales{
+    width: 360px;
+    height: 310px;
+  }
+
+  /*nosotros*/
+  .sobre__nosotros{
+    margin-left: 70px;
+  }
+  
+  .contenedornosotros{
+    margin: none;
+    gap: 0rem;
+  }
+  .grid-item-inicio1{
+    border: none;
+  }
+
+  .imglogonosotros{
+    max-width: 300px;
+  }
   /*footer*/
 
   footer{
@@ -1054,7 +1374,13 @@ footer{
   }
 }
 
+
 @media (max-width:375px){
+  .header{
+      flex-direction: column;
+      min-width: 250px;
+  }
+
   .titulo{
     font-size: 14px;
   }
@@ -1066,10 +1392,71 @@ footer{
   .footer2{
     font-size: 11px; 
   }
+
+  /*productos*/
+
+  .nuestromenu{
+    margin-left: 80px;
+  }
+
+  .productos__subtitulo__seccion__size{
+   font-size: 6.80rem;
+   color: #fbbe00;
+   -webkit-text-stroke: 2px #000000;
+   text-shadow: 4px 4px 4px #000;
+  }
+
+  /*locales*/
+  .titulo__locales{
+    margin-left: 55px;
+  }
+
+  .caja__locales{
+    width: 300px;
+    height: 260px;
+  }
+
+  /*footer*/
+
+  .logo_footer1{
+    width: 375;
+  }
+
+  .footer1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__subtitulos{
+    font-size: 2.50rem;
+  }
+
+  .footer2{
+    font-size: 1.50rem;
+  }
+
+  /*nosotros*/
+  .sobre__nosotros{
+    margin-left: 50px;
+  }
+
+  .imglogonosotros{
+    max-width: 300px;
+  }
+}
+
+@media (max-width:350px){
+  .sobre__nosotros{
+    font-size: 4.80rem;
+  }
 }
 
 @media (max-width:320px) {
   /*header*/
+  .logo__tamaño__responsive{
+    width: 250px;
+    height: 250px;
+  }
   .header{
     min-width: 150px;
   }
@@ -1091,6 +1478,15 @@ footer{
     min-width: 150px; 
   }
 
+  /*productos*/
+  .nuestromenu{
+    margin-left: 40px;
+  }
+
+  .productos__subtitulo__seccion__size{
+    font-size: 6rem;
+  }
+
   /*nosotros*/
 
   .imglogonosotros{
@@ -1099,6 +1495,16 @@ footer{
 
   .imglogonosotros2{
     max-width: 250px;
+  }
+
+  /*locales*/
+  .titulo__locales {
+    margin-left: 25px;
+  }
+
+  .caja__locales{
+    width: 270px;
+    height: 230px;
   }
 }
 
