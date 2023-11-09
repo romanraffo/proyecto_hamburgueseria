@@ -35,10 +35,10 @@ footer{
             .lista__footer{
                 transition: 1s;
                 color: #000000;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-family: $fontKanit;
 
                 &:hover{
-                    color: yellow;
+                    color: $mainColor;
                 }
             }
         }
@@ -64,7 +64,7 @@ footer{
                 transition: 1s;
 
                 &:hover{
-                    color: yellow;
+                    color: $mainColor;
                 }
               }
         }

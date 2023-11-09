@@ -1165,7 +1165,7 @@ footer .footer1 .footer2 .lista__footer {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 footer .footer1 .footer2 .lista__footer:hover {
-  color: yellow;
+  color: rgb(228, 228, 80);
 }
 footer .footer1 .footer3 {
   list-style: none;
@@ -1188,7 +1188,7 @@ footer .footer1 .footer4 .footer4__redes {
   transition: 1s;
 }
 footer .footer1 .footer4 .footer4__redes:hover {
-  color: yellow;
+  color: rgb(228, 228, 80);
 }
 footer .footer__img__escondida__responsive {
   display: none;
