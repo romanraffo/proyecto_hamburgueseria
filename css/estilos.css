@@ -1462,6 +1462,8 @@ footer{
     max-width: 250px;
   }
 
+ /*display: flex;*
+
   /*locales*/
   .titulo__locales {
     margin-left: 25px;
