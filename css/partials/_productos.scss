@@ -1,0 +1,162 @@
+.mainproductos{
+    min-height: 100vh;
+
+    @include Tablet2 {
+        min-height: 250vh;
+    }
+
+    .nuestromenu0{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+        background-color: #E29505;
+
+        .secciones {
+            /*NADA*/
+
+            .nuestromenu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 40px;
+                font-size: 5rem;
+                color: #000000;
+
+                @include Tablet5 {
+                    margin-left: 120px;
+                }
+
+                @include Mobile2{
+                    margin-left: 80px;
+                }
+
+                @include Mobile4{
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+
+    .productos__subtitulo__seccion{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        .productos__subtitulo__seccion__size{
+            font-size: 8rem;
+            color: #fbbe00;
+            -webkit-text-stroke: 2px #000000;
+            text-shadow: 4px 4px 4px #000;
+
+            @include Mobile2 {
+                font-size: 6.80rem;
+                color: #fbbe00;
+                -webkit-text-stroke: 2px #000000;
+                text-shadow: 4px 4px 4px #000;
+            }
+
+            @include Mobile4 {
+                font-size: 6rem;
+            }
+        }
+    }
+
+    .productos_0{
+        display: flex;
+        justify-content: center;
+
+        @include Tablet2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .productos_1 {
+            width: 300px;
+            color: black;
+            padding: 5px;
+            display: inline-block;
+
+            .productos_imagen{
+                width: 100%;
+            }
+              
+            .productos_titulo{
+                font-size: 24px;
+                display: flex;
+                justify-content: center;
+                border: 2px solid black;
+            }
+              
+            .productos_parrafo{
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+                border: 2px dashed black;
+                padding: 2px;
+            }
+
+            .promoproductos1{
+                color: rgb(161, 24, 24);
+                font-size: 30px;
+                font-weight: 30px;
+            }
+
+            .productos_imagen,
+            .productos_titulo,
+            .productos_parrafo{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+
+    .productos__postres__posicios__responsive{
+        /*nada*/
+
+        @include Tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 45px;
+        }
+
+        .productos__postres{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 80px;
+
+            @include Tablet2 {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 300px;
+            }
+
+            .productos__postres__caja{
+                margin: 20px;
+
+                .productos__postres__titulo{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px solid black;
+
+                    @include Tablet2 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                  
+                .productos__postres__parrafo{
+                    display: flex;
+                    justify-content: center;
+                    border: 2px dashed black;
+                    font-size: 1.10rem;
+                }
+            }
+        }
+    }
+}

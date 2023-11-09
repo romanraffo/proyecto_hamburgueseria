@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+  background: rgb(255,214,90);
+  background: linear-gradient(90deg, rgba(255,214,90,1) 4%, rgba(247,179,107,1) 33%, rgba(255,214,90,1) 65%, rgba(247,179,107,1) 93%, rgba(246,153,1,1) 100%);
+  font-family: 'Bebas Neue', sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+} 

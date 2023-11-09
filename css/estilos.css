@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&family=Peralta&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Maiden+Orange&family=Peralta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Maiden+Orange&family=Peralta&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Lobster&family=Maiden+Orange&family=Peralta&family=Pixelify+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Lobster&family=Maiden+Orange&family=Peralta&family=Pixelify+Sans&family=Staatliches&display=swap');
@@ -10,21 +10,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Unbounded:wght@200&display=swap');
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-body{
-  background: rgb(255,214,90);
-  background: linear-gradient(90deg, rgba(255,214,90,1) 4%, rgba(247,179,107,1) 33%, rgba(255,214,90,1) 65%, rgba(247,179,107,1) 93%, rgba(246,153,1,1) 100%);
-  font-family: 'Bebas Neue', sans-serif;
-  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*header*/
+body{
+background: rgb(255,214,90);
+background: linear-gradient(90deg, rgba(255,214,90,1) 4%, rgba(247,179,107,1) 33%, rgba(255,214,90,1) 65%, rgba(247,179,107,1) 93%, rgba(246,153,1,1) 100%);
+font-family: 'Bebas Neue', sans-serif;
+color: black;
+}
+
+/*header*
 
 .header__img__escondida__responsive{
   display: none;
@@ -36,7 +35,7 @@ body{
 }
 
 .bg-body-tertiary{
-  --bs-bg-opacity: none; /*provoca bordes blanco tanto en top y bottom*/
+  --bs-bg-opacity: none; /*provoca bordes blanco tanto en top y bottom*
 }
 
 .header__father{
@@ -487,37 +486,26 @@ a {
   background-color: white;
 }
 
-.main1{
-  background-color: #42213D;
-  text-align: center;
-  padding: 5px;
-  margin: 40px;
-  border: 2px solid white;
-}
-
-.inicio1{
-  color: white;
-}*/
 /*seccion inicio*/
 
 
 /*productos*/
-.mainproductos{
+.mainproductos{*
   min-height: 100vh;
 }
 
-.nuestromenu0{
+.nuestromenu0{*
   display: flex;
   justify-content: center;
   margin-bottom: 80px;
   background-color: #E29505;
 }
 
-.secciones {
+.secciones {*
  /*NADA*/
 }
 
-.nuestromenu{
+.nuestromenu{*
   display: flex;
   justify-content: center;
   align-items: center;
@@ -526,7 +514,7 @@ a {
   color: #000000;
 }
 
-.productos__subtitulo__seccion{
+.productos__subtitulo__seccion{*
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
@@ -539,38 +527,35 @@ a {
   text-shadow: 4px 4px 4px #000;
 }
 
-.productos_0{
+.productos_0{*
   display: flex;
   justify-content: center;
 }
 
-.productos_1 {
+.productos_1 {*
   width: 300px;
   color: black;
   padding: 5px;
   display: inline-block;
 }
 
-.productos_imagen{
+.productos_imagen{*
   width: 100%;
 }
 
-.productos_titulo{
+.productos_titulo{*
   font-size: 24px;
   display: flex;
   justify-content: center;
   border: 2px solid black;
 }
 
-.productos_parrafo{
+.productos_parrafo{*
   font-size: 18px;
   display: flex;
   justify-content: center;
   border: 2px dashed black;
   padding: 2px;
-}
-.productos_boton{
-  border: none;
 }
 
 .productos_imagen,
@@ -579,7 +564,7 @@ a {
   margin-bottom: 10px;
 }
 
-.promoproductos1{
+.promoproductos1{*
   color: rgb(161, 24, 24);
   font-size: 30px;
   font-weight: 30px;
@@ -652,12 +637,6 @@ footer{
   list-style: none;
 }
 
-.footer__subtitulos{
-  text-decoration: underline black;
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
 .footer3{
   list-style: none;
   display: flex;
@@ -679,7 +658,7 @@ footer{
   color: yellow;
 }
 
-.footer5{
+/*.footer5{
   display: flex;
   justify-content: center;
   border-top: 1px solid grey;
@@ -811,10 +790,6 @@ footer{
   .header__father{
       display: flex;
       justify-content: flex-start;
-  }
-  .header__father{
-      display: flex;
-      justify-content: center;
   }
   .header{
       background: rgb(255,214,90);
@@ -972,17 +947,7 @@ footer{
     ;
   }
 
-  /*seccion locales*/
-
-  .div3__titulo__locales{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .div4__titulo__locales{
-    padding: 2rem;
-  }
+  
 }
 
 @media (max-width:768px){
@@ -1107,7 +1072,7 @@ footer{
     gap: 0.50rem;
   }
   /*inicio*/
-  
+
   .mainpromo{
     font-size: 1.5rem;
     border: 2px dashed black;
@@ -1506,7 +1471,7 @@ footer{
     width: 270px;
     height: 230px;
   }
-}
+
 
 @media (max-height:800px) {
   .maininicio{

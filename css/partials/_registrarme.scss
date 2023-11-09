@@ -1,0 +1,77 @@
+.menu__registrarme{
+    height: 100vh;
+    background-image: url(../img/fondo.naranja.registrarme.webp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .tarjeta__registrarme{
+        width: 500px;
+        height: 600px;
+        margin: 0% auto;
+        background-color: white;
+        border-radius: 20px; /* Define el radio de las esquinas para hacerlas redondeadas */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        border: 2px solid black;
+        flex-wrap: wrap;
+
+        .div__logo__registrarme{
+            margin: 10px;
+        }
+
+        .div__logo__texto__registrarme{
+            font-size: 2rem;
+            border-bottom: thick double #030303;
+        }
+
+        .tarjeta__registrarme3{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 0.50rem;
+            margin-right: 0.50rem;
+
+            .form__div1{
+                margin-bottom: 30px;
+            }
+              
+            .button__iniciar__registrarme{
+                border-radius: 20px;
+                border: 2px solid black;
+                background-color: rgb(233, 175, 68);
+            }
+        }
+
+        .div__divider__all{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1rem;
+
+            .div__divider__left , .div__divider__right{
+                width: 100%;
+                border-bottom: 2px solid #000000;
+                margin: 10px;
+            }
+
+            .div__divider__center{
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+
+        .div__redes__enlaces__registrarme{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.10rem;
+
+            .a__redes__enlaces__registrarme{
+                padding: 8px;
+                border-radius: 20px;
+                border: 2px solid black;
+                background-color: rgb(233, 175, 68);
+            }
+        }
+    }
+}

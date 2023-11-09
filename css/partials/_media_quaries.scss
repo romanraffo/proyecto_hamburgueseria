@@ -1,0 +1,109 @@
+@mixin portatil {
+  @media screen and (max-width:1440px){
+    @content;
+  }
+}
+
+@mixin portatil2 {
+  @media screen and (max-width:1230px){
+    @content;
+  }
+}
+
+@mixin portatil3 {
+  @media screen and (max-width:1100px){
+    @content;
+  }
+}
+
+@mixin portatil4 {
+  @media (max-width:1042px){
+    @content;
+  }
+}
+
+@mixin portatil5 {
+  @media (max-width:1024px){
+    @content;
+  }
+}
+
+/* A partir de ahora con Bootstrap Header*/
+
+@mixin portatil6 {
+  @media (max-width:990px){
+    @content;
+  }
+}
+
+@mixin portatil7 {
+  @media (max-width:975px){
+    @content;
+  }
+}
+
+@mixin portatil8 {
+  @media (max-width:885px){
+    @content;
+  }
+}
+
+@mixin portatil9 {
+  @media (max-width:850px){
+    @content;
+  }
+}
+
+@mixin Tablet {
+  @media (max-width:768px){
+    @content;
+  }
+}
+
+@mixin Tablet2 {
+  @media (max-width:670px){
+    @content;
+  }
+}
+
+@mixin Tablet3 {
+  @media (max-width:615px){
+    @content;
+  }
+}
+
+@mixin Tablet4 {
+  @media (max-width:540px){
+    @content;
+  }
+}
+
+@mixin Tablet5 {
+  @media (max-width:480px){
+    @content;
+  }
+}
+
+@mixin Mobile {
+  @media (max-width:415px){
+    @content;
+  }
+}
+
+@mixin Mobile2 {
+  @media (max-width:375px){
+    @content;
+  }
+}
+
+@mixin Mobile3 {
+  @media (max-width:350px){
+    @content;
+  }
+}
+
+@mixin Mobile4 {
+  @media (max-width:320px){
+    @content;
+  }
+}

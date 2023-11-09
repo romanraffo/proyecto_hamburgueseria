@@ -1,0 +1,116 @@
+.main__locales{
+
+    .container__locales__titulo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+        background-color: #E29505;
+    
+        .div1__titulo__locales{
+            display: flex;
+            margin: 36px;
+        }
+    
+        .titulo__locales{ 
+            font-size: 5rem;
+            color: #000000;
+            justify-content: center;
+            align-items: center;
+
+            @include Tablet4 {
+                margin-left: 95px;
+            }
+
+            @include Tablet5 {
+                margin-left: 70px;
+            }
+
+            @include Mobile {
+                margin-left: 55px;           
+            }
+
+            @include Mobile2 {
+                margin-left: 55px;
+            }
+
+            @include Mobile4 {
+                margin-left: 25px;
+            }
+        }
+    }
+    
+    .container__locales__info{
+        min-height: 40vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1100px;
+        margin: auto;
+
+        @include Tablet {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .caja__locales{
+            width: 400px;
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+            margin: 20px;
+            border: 5px solid rgb(218, 165, 67);
+            border-radius: 4px;
+            box-shadow: 10px 10px 10px 5px rgb(37, 35, 35);
+
+            @include Tablet5 {
+                width: 380px;
+                height: 330px;
+            }
+
+            @include Mobile {
+                width: 360px;
+                height: 310px;
+            }
+
+            @include Mobile2 {
+                width: 300px;
+                height: 260px;
+            }
+
+            @include Mobile4 {
+                width: 270px;
+                height: 230px;
+            }
+    
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+    
+            &:hover .locales__capa{
+                transform: scale(1);
+            }
+    
+            .locales__capa{
+                position: absolute;
+                top: 0;
+                left: 0;
+                color:white;
+                background: rgba(0,0,0,0.5);
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transform: scale(0);
+                transition: .1s;
+    
+                .locales__capa__titulo{
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+}

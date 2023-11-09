@@ -1,0 +1,88 @@
+footer{
+    height: auto;
+    color: black;
+    background-color: #FFAE03;
+
+    .logo_footer1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer1{
+        color:black;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        @include Tablet3 {
+            padding-top: 1.75rem;
+            font-size: 0.85rem;
+        }
+
+        .footer2{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            list-style: none;
+
+            @include Tablet3 {
+                gap: 0.25rem;
+            }
+
+            .lista__footer{
+                transition: 1s;
+                color: #000000;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                &:hover{
+                    color: yellow;
+                }
+            }
+        }
+
+        .footer3{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-right: 180px;
+
+            @include Tablet {
+                margin-bottom: 300px;
+                display: none;
+            }
+        }
+
+        .footer4{
+            list-style: none;
+            font-size: 40px;
+
+            .footer4__redes{
+                color: #000000;
+                transition: 1s;
+
+                &:hover{
+                    color: yellow;
+                }
+              }
+        }
+    }
+
+    .footer__img__escondida__responsive{
+        display: none;
+
+        @include Tablet {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .footer5{
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid grey;
+        margin-top: 10px;
+    }
+}

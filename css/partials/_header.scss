@@ -1,0 +1,231 @@
+.header__img__escondida__responsive{
+    display: none;
+    justify-content: center;
+
+    @include portatil6 {
+        display: flex;
+    }
+
+    .logo__tamaño__responsive{
+        width: 210px;
+
+        @include Tablet3 {
+            width: 330px;
+            display: flex;
+            justify-content: center;
+        }
+
+       @include Mobile4 {
+        width: 250px;
+        height: 250px;
+       }
+    }
+}
+
+.navbar.bg-body-tertiary{
+    --bs-bg-opacity: none; /*provoca bordes blanco tanto en top y bottom*/
+
+    @include portatil6{
+        margin-bottom: 70px;
+    }
+
+    @include portatil7{
+        margin-bottom: 80px;
+    }
+
+    @include portatil8{
+        margin-bottom: 60px;
+    }
+
+    @include portatil9{
+        margin-bottom: 70px;
+    }
+
+    @include Tablet3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__father{
+        background-color: transparent;
+
+        @include portatil6 {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .navbar-toggler{
+
+            @include portatil6 {
+                margin-bottom: 5px;
+            }
+        }
+
+        .header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem 5rem;
+            background-color: transparent;
+
+            @include portatil6 {
+                background: rgb(255,214,90);
+                min-height: 70vh;
+                border: 2px solid black;  
+                display: flex;
+                justify-content: center;
+                padding: 0rem;
+            }
+
+            @include Tablet3 {
+                flex-direction: column;
+                min-height: 400px;
+            }
+
+            @include Mobile {
+                flex-direction: column;
+                min-height: 300px;
+            }
+
+            @include Mobile2{
+                flex-direction: column;
+                min-width: 250px;
+            }
+
+            @include Mobile4 {
+                min-width: 150px;
+            }
+
+            .header__nav{
+                padding: 0.60rem;
+                margin-left: 175px;
+
+                @include portatil {
+                   padding: 0.60rem;
+                   margin-left: 0px;    
+                }
+
+                @include portatil6 {
+                    display: flex;
+                    justify-content: start;
+                    margin-left:0px;
+                }
+
+                .header__titulo{
+                    list-style: none;
+                    display: flex;
+                    gap: 1.50rem;
+                    align-items: center;
+                    font-weight: 4rem;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+                    @include portatil6 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        gap: 1rem;
+                    }
+
+                    .header__lista{
+                        color: black;
+                        align-items: center;
+                        font-size: 1.25rem;
+
+                        @include portatil2 {
+                            font-size: 1rem;
+                        }
+
+                        @include portatil3 {
+                            font-size: 1rem;
+                        }
+
+                        @include portatil4 {
+                            font-size: 1rem;
+                        }
+
+                        @include portatil5 {
+                            font-size: 1rem;
+                        }
+
+                        @include portatil6 {
+                            color: black;
+                            align-items: center;
+                            font-size: 1.60rem;
+                            width: 40px;
+                            color: rgb(0, 0, 0);
+                        }
+
+                        &:hover {
+                            text-decoration: underline black;
+                        }
+                    }
+
+                    .header__delivery{
+                        border: 2px solid rgb(0, 0, 0);
+                        border-radius: 20px;
+                        padding: 10px;
+                        background-color: rgb(228, 84, 84);
+                        font-size: 22px;
+
+                        @include portatil2 {
+                            font-size: 22px;
+                        }
+
+                        @include portatil3{
+                            font-size: 15px;
+                        }
+
+                        @include portatil4 {
+                            font-size: 12px;
+                        }
+
+                        @include portatil5 {
+                            font-size: 12px;
+                            margin-bottom: 100px;
+                        }
+
+                        @include portatil6 {
+                            border: 2px solid rgb(0, 0, 0);
+                            border-radius: 20px;
+                            padding: 10px;
+                            background-color: rgb(228, 84, 84);
+                            font-size: 30px;
+                        }
+
+                        .bi-car-front-fill{
+                           
+                            @include portatil2 {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .logo{
+                        display: flex;
+                        align-items: center;
+
+                        .logo__tamaño{
+                            width: 210px;
+
+                            @include portatil3 {
+                                width: 190px;
+                            }
+
+                            @include portatil4 {
+                                width: 180px;
+                            }
+
+                            @include portatil5 {
+                                width: 155px;
+                            }
+
+                            @include portatil6 {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

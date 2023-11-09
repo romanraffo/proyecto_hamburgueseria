@@ -1,0 +1,160 @@
+.maininicio{
+  background-image: url(../img/fondohamburguesas.logo.jpg);
+  height: auto;
+  flex-wrap: wrap;
+
+  @include portatil9 {
+    min-height: 120vh
+  }
+
+   .maininicio1{
+      font-family: 'Bebas Neue', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include portatil9 {
+        font-family: 'Bebas Neue', sans-serif;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .maintexto{
+        font-size: 6rem;
+
+        @include portatil7 {
+          margin-left: 20px;
+        }
+
+        @include portatil8 {
+          margin-left: 20px;
+        }
+
+        @include portatil9 {
+          padding-inline: 2rem;
+          padding-top: 5rem;
+        }
+
+        @include Tablet3 {
+          font-size: 3rem;
+          margin: 2rem; 
+        }
+
+        @include Mobile {
+          font-size: 3rem;
+          margin: 2rem;
+        }
+
+        .mainpromo{
+          font-size: 2.50rem;
+          border: 2px dashed black;
+          padding: 5px;
+
+          @include Tablet3 {
+            font-size: 1.5rem;
+            border: 2px dashed black;
+            padding: 5px;
+          }
+
+          @include Mobile {
+            font-size: 1.5rem;
+            border: 2px dashed black;
+            padding: 5px;
+          }
+        }
+
+        .mainmonster{
+          font-size: 3rem;
+        }
+
+        .mainbutton{
+          border: 2px solid black;
+          border-radius: 5px;
+          font-family: 'Bebas Neue', sans-serif;
+          padding: 10px;
+          transition: 1s;
+          background-color: rgb(250, 178, 43);
+
+          @include portatil8 {
+            font-size: 4rem;
+          }
+
+          @include portatil9 {
+            border-color: black;
+          }
+
+          @include Tablet3 {
+            border: 2px solid black;
+            font-family: 'Bebas Neue', sans-serif;
+            padding: 10px;
+          }
+
+          @include Mobile {
+            border: 2px solid black;
+            font-family: 'Bebas Neue', sans-serif;
+            padding: 10px;
+          }
+
+          &:hover{
+            background-color: rgb(201, 130, 0);
+          }
+        }
+      }
+
+      .mainpromoburguer{
+
+        @include portatil9 {
+          max-width: 510px;
+          margin-top: 100px;
+        }
+      }
+
+      .mainpromoburguer img{
+        max-width: 625px;
+      
+        animation-name: moverse;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
+        @keyframes moverse {
+          0% {
+            top: 0px;
+            transform: translateY(0px);
+          }
+          50% {
+            top: -100px; /* Mover arriba */
+            transform: translateY(-80px);
+          }
+          0% {
+            top: 0px;
+            transform: translateY(0px);
+
+          }
+        }
+
+        @include portatil7 {
+          max-width: 590px;
+        }
+
+        @include portatil8 {
+          max-width: 580px;
+        }
+
+        @include Tablet2 {
+          max-width: 460px;
+        }
+
+        @include Tablet3 {
+          max-width: 380px;
+        }
+
+        @include Mobile {
+          max-width: 360px;
+        }
+
+        @include Mobile4 {
+          max-width: 310px;
+        }
+      }
+    }
+}
