@@ -9,7 +9,7 @@
         width: 500px;
         min-height: 650px;
         margin: 0% auto;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         border-radius: 20px; /* Define el radio de las esquinas para hacerlas redondeadas */
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         border: 2px solid black;
@@ -78,7 +78,8 @@
                 padding: 8px;
                 border-radius: 20px;
                 border: 2px solid black;
-                background-color: rgb(233, 175, 68);
+                background-color: rgb(224, 167, 59);
+                margin-bottom: 10px;
             }
         }
     }
