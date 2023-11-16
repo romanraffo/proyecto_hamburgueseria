@@ -7,7 +7,7 @@
 
     .tarjeta__registrarme{
         width: 500px;
-        height: 600px;
+        min-height: 650px;
         margin: 0% auto;
         background-color: white;
         border-radius: 20px; /* Define el radio de las esquinas para hacerlas redondeadas */
@@ -38,6 +38,14 @@
                 border-radius: 20px;
                 border: 2px solid black;
                 background-color: rgb(233, 175, 68);
+            }
+
+            .button__iniciar__crear_cuenta{
+                margin-top: 15px;
+                border-radius: 20px;
+                border: 2px solid black;
+                background-color: rgb(233, 175, 68);
+                text-decoration: none;
             }
         }
 
