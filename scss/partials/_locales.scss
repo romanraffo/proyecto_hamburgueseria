@@ -16,26 +16,20 @@
             color: #000000;
             justify-content: center;
             align-items: center;
+            text-align: center;
+        }
+    }
 
-            @include Tablet4 {
-                margin-left: 95px;
-            }
+    .container__desc {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
 
-            @include Tablet5 {
-                margin-left: 70px;
-            }
-
-            @include Mobile {
-                margin-left: 55px;           
-            }
-
-            @include Mobile2 {
-                margin-left: 55px;
-            }
-
-            @include Mobile4 {
-                margin-left: 25px;
-            }
+        .container__desc__size{
+            text-align: center;
+            font-size: 3rem;
+            -webkit-text-stroke: 1px black;
+            color: #E29505;
         }
     }
     
@@ -69,13 +63,13 @@
             }
 
             @include Mobile {
-                width: 360px;
-                height: 310px;
+                width: 340px;
+                height: 290px;
             }
 
             @include Mobile2 {
-                width: 300px;
-                height: 260px;
+                width: 320px;
+                height: 270px;
             }
 
             @include Mobile4 {
@@ -104,8 +98,13 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                text-align: center;
                 transform: scale(0);
                 transition: .1s;
+
+                @include portatil8 {
+                    transform: scale(1);
+                }
     
                 .locales__capa__titulo{
                     font-size: 4rem;

@@ -18,6 +18,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        text-align: center;
 
         @include Tablet3 {
             background-color: #fbbe00;
@@ -151,6 +152,34 @@
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 font-size: 9rem;
                 color: #fbbe00;
+
+                @include Tablet {
+                    font-size: 8rem;
+                }
+
+                @include Tablet2 {
+                    font-size: 7rem;
+                }
+
+                @include Tablet3 {
+                    font-size: 5.80rem;
+                }
+
+                @include Tablet5 {
+                    font-size: 5rem;
+                }
+
+                @include Mobile {
+                    font-size: 4.20rem;
+                }
+
+                @include Mobile3 {
+                    font-size: 3.80rem;
+                }
+
+                @include Mobile4 {
+                    font-size: 3.30rem;
+                }
             }
         }
     }
@@ -165,7 +194,7 @@
             grid-auto-flow: column;
             overflow-x: scroll; 
             border-radius: 15px 5px 5px 5px;
-            border: 2px solid white;
+            border: 2px solid #2e2e2e;
             margin: 10px;
 
             &::-webkit-scrollbar {
@@ -204,17 +233,65 @@
         margin: 50px;
 
         .inicio__separador__3{
+            display: flex;
+            justify-content: center;
+            text-align: center;
             font-size: 9rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             -webkit-text-stroke: 2px #e4d7d7;
+
+            @include Tablet {
+                font-size: 8rem;
+            }
+
+            @include Tablet2 {
+                font-size: 7rem;
+            }
+
+            @include Tablet3 {
+                font-size: 6rem;
+            }
+
+            @include Tablet5 {
+                font-size: 5rem;
+            }
+
+            @include Mobile {
+                font-size: 4.30rem;
+            }
+
+            @include Mobile3 {
+                font-size: 3.80rem;
+            }
+
+            @include Mobile4 {
+                font-size: 3.40rem;
+            }
         }
 
         .inicio__separador__4{
             display: flex;
             justify-content: center;
+            text-align: center;
             font-size: 7rem;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             -webkit-text-stroke: 2px #e4d7d7;
+
+            @include Tablet {
+                font-size: 6rem;
+            }
+
+            @include Tablet2 {
+                font-size: 5rem;
+            }
+
+            @include Tablet3 {
+                font-size: 4rem;
+            }
+
+            @include Tablet5 {
+                font-size: 3.50rem;
+            }
         }
     }
 }
