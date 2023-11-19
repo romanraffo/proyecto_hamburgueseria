@@ -9,13 +9,14 @@
     <link rel="shortcut icon" href="./img/Logito.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./scss/style.css">
 </head>
 <body>
     <main>
 
         <section class="maininicio">
-            <div class="header__img__escondida__responsive">
+            <div class="header__img__escondida__responsive animate__animated animate__bounce">
                 <img src="./img/Logito.png" alt="Logo de Royale's Cheese" class="logo__tamaño__responsive">
             </div>
            <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
@@ -31,7 +32,7 @@
                         <li><a href="./pages/locales.html" class="header__lista titulo-link">LOCALES</a></li>
                         <li>
                         <div class="logo">
-                           <img src="./img/Logito.png" alt="Hamburguesa logo" class="logo__tamaño">
+                            <a href="./index.html"><img src="./img/Logito.png" alt="Hamburguesa logo" class="logo__tamaño"></a>
                         </div>
                         </li>
                         <li><a href="./pages/quienessomos.html" class="header__lista titulo-link">NOSOTROS</a></li>
@@ -117,6 +118,35 @@
             <div class="inicio__separador__2">
                 <h2 class="inicio__separador__3">#ROYALE'S CHEESE</h2>
                 <h2 class="inicio__separador__4">#N°1 DE ARGENTINA</h2>
+            </div>
+        </section>
+
+        <section>
+            <div class="inicio__card">
+                <div class="inicio__card__div card" style="width: 20rem;">
+                    <img src="./img/Foto.negocio.5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card__titulo card-title">Nuestros locales</h5>
+                      <p class="card__texto card-text"> Explora nuestra variedad de espacios fisicos que te llevarán a vivir la mejor experiencias</p>
+                      <a href="./pages/locales.html" class="card_boton btn btn-primary">Buscar locales</a>
+                    </div>
+                </div>
+                <div class="inicio__card__div card" style="width: 20rem;">
+                    <img src="./img/Foto.5.overflow.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card__titulo card-title">Mirá nuestro menu</h5>
+                      <p class="card__texto card-text">Desde hamburguesas jugosas hasta una amplia gama de bebidas refrescantes y postres tentadores.</p>
+                      <a href="./pages/productos.html" class="card_boton btn btn-primary">Ver menu</a>
+                    </div>
+                </div>
+                <div class="inicio__card__div card" style="width: 20rem;">
+                    <img src="./img/Foto.1.overflow.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card__titulo card-title">¿Queres trabajar con nosotros?</h5>
+                      <p class="card__texto card-text">Investiga mas esta seccion para saber mas sobre nosotros y tener tu confianza</p>
+                      <a href="./pages/quienessomos.html" class="card_boton btn btn-primary">¡Conocenos!</a>
+                    </div>
+                </div>
             </div>
         </section>
 

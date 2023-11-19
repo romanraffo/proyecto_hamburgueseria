@@ -103,6 +103,9 @@
 
       .mainpromoburguer{
 
+        animation: backInRight;
+        animation-duration: 1.5s;
+
         @include portatil9 {
           max-width: 510px;
           margin-top: 100px;
