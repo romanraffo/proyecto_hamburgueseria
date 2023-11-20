@@ -816,6 +816,9 @@ a {
   background-color: rgb(216, 133, 24);
   border: rgb(216, 133, 24);
 }
+.inicio__card .card_boton:hover {
+  color: #2b2f31;
+}
 
 /*seccion Inicio
 
@@ -852,6 +855,9 @@ a {
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
+  animation: fadeInDown;
+  animation-duration: 3s;
 }
 .mainproductos .secciones__menu .secciones__menu__grilla {
   display: flex;
@@ -885,6 +891,8 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  animation: backInUp;
+  animation-duration: 3s;
 }
 .mainproductos .productos__subtitulo__seccion .productos__subtitulo__seccion__size {
   font-size: 10rem;
@@ -974,6 +982,11 @@ a {
      object-fit: contain;
 }
 .mainproductos .container__productos .caja__productos .caja__productos__Img__bebida {
+  width: 250px;
+  display: flex;
+  align-items: center;
+}
+.mainproductos .container__productos .caja__productos .caja__productos__Img__postre {
   width: 250px;
   display: flex;
   align-items: center;
@@ -1093,39 +1106,6 @@ a {
 .mainproductos .productos_0 .productos_1 .productos_parrafo:hover {
   transform: scale(1.15);
 }
-.mainproductos .productos__bebidas {
-  display: flex;
-  justify-content: center;
-  margin: 40px;
-}
-.mainproductos .productos__bebidas .productos__bebidas__caja {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1.15rem;
-  margin: 15px;
-}
-.mainproductos .productos__bebidas .productos__bebidas__caja .productos__bebidas__img {
-  width: 230px;
-}
-.mainproductos .productos__bebidas .productos__bebidas__caja .productos__bebidas__titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid black;
-}
-.mainproductos .productos__bebidas .productos__bebidas__caja .productos__bebidas__titulo:hover {
-  background-color: white;
-}
-.mainproductos .productos__bebidas .productos__bebidas__caja .productos__bebidas__img,
-.mainproductos .productos__bebidas .productos__bebidas__caja .productos__bebidas__titulo {
-  transition: 1s;
-  transform: scale(1);
-}
-.mainproductos .productos__bebidas .productos__bebidas__caja .productos__bebidas__img:hover,
-.mainproductos .productos__bebidas .productos__bebidas__caja .productos__bebidas__titulo:hover {
-  transform: scale(1.15);
-}
 .mainproductos .productos__postres__posicios__responsive {
   /*nada*/
 }
@@ -1218,6 +1198,8 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  animation: backInLeft;
+  animation-duration: 2.7s;
 }
 .main__locales .container__desc .container__desc__size {
   text-align: center;

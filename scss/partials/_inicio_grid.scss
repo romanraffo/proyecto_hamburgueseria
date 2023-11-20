@@ -347,6 +347,10 @@
         justify-content: center;
         background-color: rgb(216, 133, 24);
         border: rgb(216, 133, 24);
+
+        &:hover {
+            color: #2b2f31;
+        }
     }
 }
 

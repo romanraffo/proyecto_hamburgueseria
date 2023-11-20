@@ -27,6 +27,9 @@
         justify-content: center;
         margin-bottom: 30px;
 
+        animation: backInLeft;
+        animation-duration: 2.7s;
+
         .container__desc__size{
             text-align: center;
             font-size: 3rem;

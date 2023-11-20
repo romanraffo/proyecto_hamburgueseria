@@ -32,6 +32,10 @@
         display: flex;
         justify-content: center;
         gap: 10px;
+        flex-wrap: wrap;
+
+        animation: fadeInDown;
+        animation-duration: 3s;
 
         .secciones__menu__grilla{
             display: flex;
@@ -65,6 +69,9 @@
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
+
+        animation: backInUp;
+        animation-duration: 3s;
 
         .productos__subtitulo__seccion__size{
             font-size: 10rem;
@@ -156,6 +163,12 @@
             }
 
             .caja__productos__Img__bebida{
+                width: 250px;
+                display: flex;
+                align-items: center;
+            }
+
+            .caja__productos__Img__postre{
                 width: 250px;
                 display: flex;
                 align-items: center;
@@ -274,45 +287,6 @@
                 transform: scale(1);
 
                 &:hover {
-                    transform: scale(1.15);
-                }
-            }
-        }
-    }
-    
-    .productos__bebidas{
-        display: flex;
-        justify-content: center;
-        margin: 40px;
-
-        .productos__bebidas__caja{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            gap: 1.15rem;
-            margin: 15px;
-
-            .productos__bebidas__img{
-                width: 230px;
-            }
-
-            .productos__bebidas__titulo{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border: 2px solid black;
-
-                &:hover{
-                    background-color: white;
-                }
-            }
-
-            .productos__bebidas__img,
-            .productos__bebidas__titulo{
-                transition: 1s;
-                transform: scale(1);
-
-                &:hover{
                     transform: scale(1.15);
                 }
             }
