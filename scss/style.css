@@ -1330,6 +1330,8 @@ a {
 }
 .nosotros__1 .nosotros__cajita {
   width: 650px;
+  animation: jackInTheBox;
+  animation-duration: 2.5s;
 }
 @media (max-width: 670px) {
   .nosotros__1 .nosotros__cajita {

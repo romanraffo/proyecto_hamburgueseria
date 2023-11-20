@@ -39,6 +39,9 @@
     .nosotros__cajita{
         width: 650px;
 
+        animation: jackInTheBox;
+        animation-duration: 2.5s;
+
         @include Tablet2 {
             width: 600px;
         }
